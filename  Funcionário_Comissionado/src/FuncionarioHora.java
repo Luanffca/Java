@@ -10,19 +10,22 @@ public class FuncionarioHora extends FuncionarioAssalariado{
     public int getHoras(){
         return this.horas;
     }
+
     public void setHoras(int horas){
         this.horas = horas;
     }
+
     public double getvalorDaHora(){
         return this.valorDaHora;
     }
+    
     public void setvalorDaHora(int valorDaHora){
         this.valorDaHora = valorDaHora;
     }
 
     @Override
     public double ganhos(){
-        return getSalarioSemanal() + getHoras() * getvalorDaHora();
+        return getSalarioSemanal() + (getHoras() * getvalorDaHora());
     }
 
     @Override
