@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class App {
 	//private static Scanner  sol;
-	public static void main(String[] args)throws InterruptedException  {
+	public static void main(String[] args)throws InterruptedException {
 		dadosConta();
 	}
 	
@@ -29,7 +29,7 @@ public class App {
 		          
 		          if(opcao == 1){
 		              //Cria um novo objeto 
-		                      conta = new Conta();
+		                      //conta = new Conta();
 		                  System.out.println("Digite sua agencia: ");
 		                  conta.setAgencia(sc.nextLine());
 		                  sc.nextLine();

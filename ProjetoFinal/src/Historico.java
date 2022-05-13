@@ -1,8 +1,8 @@
 public class Historico {
 	
-	public String data;
-	public String operacao;
-	public String detalhes;
+	private String data;
+	private String operacao;
+	private String detalhes;
 	
 	public String getData(){
 		return this.data;
