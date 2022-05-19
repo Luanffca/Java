@@ -2,11 +2,13 @@ import java.time.Instant;
 
 import java.util.ArrayList;
 import java.util.List;
-//import java.util.Scanner;
+import java.util.Scanner;
 
 public class Poupanca extends Conta {
-
+	Scanner sc = new Scanner(System.in);
+	//Cliente clinte = new Cliente();
     List<Historico> historicos = new ArrayList<>();
+	//List<Cliente> clientesCP = new ArrayList<>();
 
     public Poupanca(String agencia, String numero, float saldo) {
         super(agencia, numero, saldo);
@@ -54,4 +56,5 @@ public class Poupanca extends Conta {
 		System.out.println("-------------------------");
 	}
     
+	
 }

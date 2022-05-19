@@ -2,12 +2,14 @@ import java.time.Instant;
 
 import java.util.ArrayList;
 import java.util.List;
-//import java.util.Scanner;
+import java.util.Scanner;
 
 public class Corrente extends Conta{
-
+	Scanner sc = new Scanner(System.in);
+	List<Cliente> clienteCC = new ArrayList<>();
 	List<Historico> historicos = new ArrayList<>();
 
+	
     public Corrente(String agencia, String numero, float saldo) {
         super(agencia, numero, saldo);
     }
@@ -53,4 +55,5 @@ public class Corrente extends Conta{
 		System.out.println("Saldo: " + getSaldo());
 		System.out.println("-------------------------");
 	}
+
 }

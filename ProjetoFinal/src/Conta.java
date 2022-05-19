@@ -4,12 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 //import java.util.Scanner;
 
-public class Conta {
+public  class Conta {
 
-	public String agencia;
-	public String numero;
+	private String agencia;
+	private String numero;
 	private float saldo;
 
+	List<Cliente> clienteCP = new ArrayList<>();
 	List<Historico> historicos = new ArrayList<>();
 
 	public Conta(String agencia, String numero, float saldo){
@@ -21,19 +22,23 @@ public class Conta {
 	public float getSaldo(){
 		return this.saldo;
 	}
+
 	public void setSaldo(float saldo) {
 		this.saldo=saldo;
 	}
+
 	public String getAgencia(){
 		return this.agencia;
 	}
+
 	public void setAgencia(String agencia) {
 		this.agencia = agencia;
-
 	}
+
 	public String getNumero(){
 		return this.numero;
 	}
+
 	public void setNumero(String numero) {
 		this.numero = numero;
 	}
